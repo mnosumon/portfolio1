@@ -1,0 +1,460 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0%;
+    font-family: 'BIZ UDPMincho', serif;
+}
+
+/* Navebar start */
+.navebar {
+    background-color: #784;
+    text-align: center;
+    padding: 10px;
+    width: 100%;
+}
+
+h1 {
+    font-size: 3rem;
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 1rem;
+}
+
+p {
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.doted-hr {
+    border: dotted 10px white;
+    margin: 20px auto;
+    border-bottom: none;
+    width: 200px;
+}
+
+.nav-logo img {
+    height: 100px;
+    width: 120px;
+    border-radius: 50%;
+}
+
+.nav-manu a {
+    background-color: #565656;
+    margin: 10px;
+    padding: 10px;
+    text-transform: uppercase;
+}
+
+.nav-manu a:hover {
+    background-color: chocolate;
+}
+
+.nav-manu {
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-head h1 {
+    font-size: 2rem;
+    text-align: center;
+
+}
+
+[class*="col-"] {
+    float: left;
+    padding: 10px;
+}
+
+[class*="col-"] {
+    width: 100%;
+}
+
+.navebar::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Navebar end */
+
+/* Profile start */
+
+.profile {
+    background-color: lightgray;
+    padding: 120px 10px;
+    text-align: center;
+    position: relative;
+}
+
+
+.profile .top-wether-icon {
+    position: absolute;
+    right: 60px;
+    top: 20px;
+    transition: transform 2s;
+}
+
+.profile .top-wether-icon:hover {
+    transform: rotate(360deg);
+}
+
+.profile-head h1 {
+    font-family: 'Send Flowers', cursive;
+
+}
+
+.profile-head p {
+    color: gray;
+    text-align: center;
+    margin: 20px auto;
+    width: 90%;
+}
+
+.profile .bottom-wether-icon {
+    position: absolute;
+    left: 60px;
+    bottom: 20px;
+    transition: transform 2s;
+}
+
+.profile .bottom-wether-icon:hover {
+    transform: rotate(-360deg);
+}
+
+.prpfile::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Profile end */
+
+/* About me start */
+
+.about-me {
+    background-color: rgb(102, 175, 204);
+    padding: 1% 5%;
+    color: white;
+    text-align: center;
+    font-family: 'Oswald', sans-serif;
+}
+
+.myface img {
+    border: 5px solid saddlebrown;
+    border-radius: 50%;
+    width: 250px;
+    height: 280px;
+}
+
+.bio p {
+    text-align: center;
+}
+
+.bio a {
+    font-size: 1rem;
+}
+
+.cv {
+    background-color: coral;
+    border-radius: 15px;
+    border: none;
+    padding: 10px;
+    font-size: 20px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.about-me::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* About me end */
+
+
+/* Work Experience star */
+
+.experience {
+    margin-bottom: 10px;
+}
+
+.work-experience,
+.education,
+.skills {
+    padding: 1% 1%;
+}
+
+.work-experience .card,
+.education .card,
+.skills .card {
+    box-shadow: 0px 0px 25px black, 0px 0px 25px black;
+    border-radius: 10px;
+    background-color: #a39e9e;
+    padding: 10px;
+    margin: 0px 5px;
+    transition: 0.2s;
+}
+
+
+.work-experience .card:hover,
+.education .card:hover,
+.skills .card:hover {
+    box-shadow: 10px 15px 25px blueviolet, 10px 15px 25px blueviolet, 10px 15px 25px blueviolet;
+}
+
+.work-experience .card .card-icon,
+.education .card .card-icon,
+.skills .card .card-icon {
+    text-align: center;
+}
+
+.card-icon img {
+    margin-top: 10px;
+    border: 5px solid wheat;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.card .card-head h2 {
+    background-color: #616161;
+    color: wheat;
+    padding: 10px 0 10px 0;
+}
+
+.progress-bar {
+    padding-right: 50px;
+}
+
+.progress-bar .progress-list {
+    list-style-type: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.progress-bar .progress-list li {
+    margin: 40px 10px;
+    position: relative;
+
+}
+
+.progress-bar .progress-list li::before {
+    content: '';
+    top: calc(100% + 5px);
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    background-color: rgb(86, 86, 153, 0.5);
+    border-radius: 100px;
+}
+
+.progress-bar .progress-list li::after {
+    content: '';
+    top: calc(100% + 5px);
+    position: absolute;
+    left: 0;
+    height: 20px;
+    width: 0;
+    background-color: rgb(86, 86, 153, 1);
+    border-radius: 100px;
+
+    animation-duration: 2s;
+    animation-delay: 0.7s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 5;
+
+}
+
+.progress-bar .progress-list li.autocad2d::after {
+    animation-name: autocad2d;
+}
+
+@keyframes autocad2d {
+    to {
+        width: 90%;
+    }
+}
+
+.progress-bar .progress-list li.autocad3d::after {
+    animation-name: autocad3d;
+}
+
+@keyframes autocad3d {
+    to {
+        width: 45%;
+    }
+}
+
+.progress-bar .progress-list li.html::after {
+    animation-name: html;
+}
+
+@keyframes html {
+    to {
+        width: 70%;
+    }
+}
+
+.progress-bar .progress-list li.css::after {
+    animation-name: css;
+}
+
+@keyframes css {
+    to {
+        width: 60%;
+    }
+}
+
+.progress-bar .progress-list li.java::after {
+    animation-name: java;
+}
+
+@keyframes java {
+    to {
+        width: 10%;
+    }
+}
+
+.progress-bar .progress-list li.st-design::after {
+    animation-name: st-design;
+}
+
+@keyframes st-design {
+    to {
+        width: 65%;
+    }
+}
+
+.progress-bar .progress-list li.cnt-work::after {
+    animation-name: cnt-work;
+}
+
+@keyframes cnt-work {
+    to {
+        width: 40%;
+    }
+}
+
+
+.experience::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Work Experience end */
+
+
+/* Achivement contact start */
+
+.achivement-contact {
+    padding: 2% 5%;
+    background-color: #e9934786;
+}
+
+.achivement-descrip p {
+    color: ;
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+
+.contact {
+    text-align: center;
+}
+
+.contact-form input,
+textarea {
+    width: 80%;
+    text-align: center;
+    resize: none;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 10px;
+    margin-left: 10%;
+}
+
+.contact-form button {
+    padding: 15px;
+    font-size: 1rem;
+    background-color: blueviolet;
+    color: white;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.more-contact-icon {
+    text-align: center;
+}
+
+.more-contact-icon .btn {
+    border: none;
+    border-radius: 20px;
+    padding: 5px;
+    margin: 10px;
+    cursor: pointer;
+    width: 50px;
+}
+
+.more-contact-icon .btn:hover {
+    background-color: gray;
+}
+
+.achivement-contact::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* Achivement contact end */
+
+/* footer start*/
+
+.footer {
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+
+.footer-manu a {
+    display: block;
+    padding: 10px;
+    margin: 10px;
+    width: 200px;
+    margin-left: 25%;
+}
+
+.footer-manu a:hover {
+    background-color: gray;
+}
+
+.footer-desc {
+    color: white;
+}
+
+.footer-desc span {
+    color: red;
+    font-size: 2rem;
+}
+
+.footer::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+/* footer end*/
